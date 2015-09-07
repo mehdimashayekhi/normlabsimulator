@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<parameters>
+					<parameter name="NormsGenNecThreshold" displayName="NSM: Norm gen. nec. threshold" type="double" 
+						defaultValue="-0.1" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+				<parameter name="NormsSpecEffThreshold" displayName="NSM: Norm spec. eff. threshold" type="double" 
+						defaultValue="0.05" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+				<parameter name="NormSynthesisStrategy" displayName="NSM: Norm synthesis strategy (0=CUSTOM/1=IRON/2=SIMON/3=SIMON+/4=LION/5=NAIM)" type="int" 
+						defaultValue="1" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="NormsMinEvaluationsToClassify" displayName="NSM: Norms min. evaluations classify" type="int" 
+						defaultValue="50" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="SimNewCarsFreq" displayName="Sim: New cars frequency" type="int" 
+						defaultValue="1" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="NormGenerationReactive" displayName="NSM: Reactive norm generation" type="boolean" 
+						defaultValue="true" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
+									
+		/>
+				<parameter name="NormGeneralisationMode" displayName="NSM: Norm generalisation mode (SHALLOW/DEEP)" type="int" 
+						defaultValue="1" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="NormsSpecNecThreshold" displayName="NSM: Norm spec. nec. threshold" type="double" 
+						defaultValue="0.05" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+				<parameter name="NormSynthesisExample" displayName="NSM: Norm synthesis example" type="int" 
+						defaultValue="0" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="randomSeed" displayName="Default Random Seed" type="int" 
+						defaultValue="0" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="NormGroupsMinEvaluationsToClassify" displayName="NSM: Norm groups min. evaluations classify" type="int" 
+						defaultValue="25" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="NumTicksToConverge" displayName="NSM: Num. ticks to converge" type="long" 
+						defaultValue="20000" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$LongConverter"
+									
+		/>
+				<parameter name="SimNormViolationRate" displayName="Sim: Norm violation rate" type="double" 
+						defaultValue="0" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+				<parameter name="SimGUI" displayName="Sim: Use GUI" type="boolean" 
+						defaultValue="true" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
+									
+		/>
+				<parameter name="SimMap" displayName="Sim: Map" type="int" 
+						defaultValue="3" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="NumExec" displayName="NSM: Num. execution" type="int" 
+						defaultValue="2" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="NormGeneralisationStep" displayName="NSM: Norm generalisation step" type="int" 
+						defaultValue="1" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="NormsPerfRangeSize" displayName="NSM: Norms performance range size" type="int" 
+						defaultValue="50" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="SimNewCarsFreqEW" displayName="Sim: New cars frequency east west" type="int" 
+						defaultValue="1" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="NormsDefaultUtility" displayName="NSM: Norms default utility" type="double" 
+						defaultValue="0.5" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+				<parameter name="SimNumCarsToEnter" displayName="Sim: Num cars to enter" type="int" 
+						defaultValue="4" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+									
+		/>
+				<parameter name="SimMaxTicks" displayName="Sim: Max ticks" type="long" 
+						defaultValue="100000" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$LongConverter"
+									
+		/>
+				<parameter name="NormsGenEffThreshold" displayName="NSM: Norm gen. eff. threshold" type="double" 
+						defaultValue="-0.1" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+				<parameter name="NormsSpecThresholdEpsilon" displayName="NSM: Spec. threshold epsilon" type="double" 
+						defaultValue="0.025" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
+									
+		/>
+		</parameters>
+
+

@@ -1,0 +1,1343 @@
+FATAL [Thread-7] 2015-07-01 15:27:11,086 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (2.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:153)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 15:30:59,701 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (2.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:153)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 16:03:12,180 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCars(CarMap.java:272)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:148)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 16:23:45,841 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 16:31:45,675 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 16:34:50,645 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 16:41:05,735 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 16:44:30,294 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCarsForward(CarMap.java:318)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:166)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 16:57:17,457 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 17:32:46,752 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 17:48:58,793 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 17:50:43,243 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 20:06:21,291 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 20:08:49,050 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 20:09:42,219 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 20:17:17,750 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 20:28:52,531 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 20:42:12,606 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCarsForward(CarMap.java:324)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:166)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 21:39:58,294 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 21:41:12,492 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 21:42:43,867 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCarsForward(CarMap.java:324)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:166)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 21:44:14,369 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-01 21:55:19,595 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (16.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCarsForward(CarMap.java:324)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:166)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 09:23:16,836 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 09:24:46,182 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 09:25:52,027 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 09:32:45,357 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 09:45:22,991 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCarsForward(CarMap.java:324)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:166)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 09:46:53,900 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 10:08:47,905 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 10:18:04,544 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:153)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 10:19:37,197 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (18.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:153)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 10:34:03,521 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCarsForward(CarMap.java:333)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:166)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 10:35:16,719 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCarsForward(CarMap.java:333)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:166)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 11:22:03,458 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCarsForward(CarMap.java:335)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:166)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 11:40:04,071 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (15.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCarsForward(CarMap.java:335)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:166)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 12:03:45,525 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at repast.simphony.util.collections.UnremoveableIterator.next(UnremoveableIterator.java:41)
+	at es.csic.iiia.normlab.traffic.map.CarMap.add(CarMap.java:627)
+	at es.csic.iiia.normlab.traffic.map.CarMap.backstep(CarMap.java:184)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:143)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 13:43:13,552 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (2.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from Iterable<TrafficElement> to TrafficElement
+
+	at es.csic.iiia.normlab.traffic.agent.monitor.TrafficView.update(TrafficView.java:94)
+	at es.csic.iiia.normlab.traffic.agent.monitor.TrafficCamera.perceive(TrafficCamera.java:53)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:122)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 13:45:46,475 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (2.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from Iterable<TrafficElement> to TrafficElement
+
+	at es.csic.iiia.normlab.traffic.agent.monitor.TrafficView.update(TrafficView.java:94)
+	at es.csic.iiia.normlab.traffic.agent.monitor.TrafficCamera.perceive(TrafficCamera.java:53)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:122)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 15:48:54,788 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Unknown Source)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.solveCase(CBRNormGenerationMachine.java:161)
+	at es.csic.iiia.nsm.norm.generation.cbr.CBRNormGenerationMachine.generateNorms(CBRNormGenerationMachine.java:106)
+	at es.csic.iiia.nsm.strategy.iron.IRONOperators.create(IRONOperators.java:91)
+	at es.csic.iiia.nsm.strategy.iron.IRONStrategy.execute(IRONStrategy.java:130)
+	at es.csic.iiia.nsm.NormSynthesisMachine.executeStrategy(NormSynthesisMachine.java:276)
+	at es.csic.iiia.normlab.traffic.agent.DefaultTrafficNormSynthesisAgent.step(DefaultTrafficNormSynthesisAgent.java:85)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:126)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 16:01:04,506 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (11.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:154)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 16:06:51,214 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (11.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:154)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 16:13:20,580 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.codify(CarMap.java:215)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:168)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 16:17:32,317 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (12.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.codify(CarMap.java:215)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:168)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 18:19:45,223 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCarsForward(CarMap.java:310)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:167)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 18:21:25,476 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.ClassCastException: es.csic.iiia.normlab.traffic.agent.Collision cannot be cast to es.csic.iiia.normlab.traffic.agent.Car
+	at es.csic.iiia.normlab.traffic.agent.Collision.<init>(Collision.java:45)
+	at es.csic.iiia.normlab.traffic.map.CarMap.moveCarsForward(CarMap.java:310)
+	at es.csic.iiia.normlab.traffic.map.CarMap.predictedstep(CarMap.java:167)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:118)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 18:46:52,226 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:154)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 19:17:38,198 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:322)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:190)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:150)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:154)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-02 19:18:40,935 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:154)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-03 09:39:58,631 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:155)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-03 11:19:28,765 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (13.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:154)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-03 12:06:32,241 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (16.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:154)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-03 13:17:39,326 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:154)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
+FATAL [Thread-7] 2015-07-03 13:19:44,644 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (1.0)
+java.lang.NullPointerException
+	at saf.v3d.scene.VComposite.addChild(VComposite.java:46)
+	at repast.simphony.visualizationOGL2D.SpatialWrapper.setChild(SpatialWrapper.java:80)
+	at repast.simphony.visualizationOGL2D.SpatialWrapper.<init>(SpatialWrapper.java:34)
+	at repast.simphony.visualizationOGL2D.StyledDisplayLayerOGL2D.createSpatial(StyledDisplayLayerOGL2D.java:146)
+	at repast.simphony.visualizationOGL2D.StyledDisplayLayerOGL2D.processAdded(StyledDisplayLayerOGL2D.java:228)
+	at repast.simphony.visualizationOGL2D.StyledDisplayLayerOGL2D.update(StyledDisplayLayerOGL2D.java:250)
+	at repast.simphony.visualizationOGL2D.DisplayOGL2D.update(DisplayOGL2D.java:404)
+	at repast.simphony.visualization.engine.DisplayComponentControllerAction$DisplayUpdater.execute(DisplayComponentControllerAction.java:44)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:238)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+FATAL [Thread-7] 2015-07-03 13:28:33,463 repast.simphony.ui.GUIScheduleRunner - RunTimeException when running the schedule
+Current tick (14.0)
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repast.simphony.ui.GUIScheduleRunner$ScheduleLoopRunnable.run(GUIScheduleRunner.java:52)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at es.csic.iiia.normlab.traffic.TrafficSimulator$$FastClassByCGLIB$$52a4ea47.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	... 7 more
+Caused by: java.lang.NullPointerException
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.generateCoordinates(CarContextFactory.java:156)
+	at es.csic.iiia.normlab.traffic.factory.CarContextFactory.getCarContextIn(CarContextFactory.java:73)
+	at es.csic.iiia.normlab.traffic.agent.Car.generateScope(Car.java:320)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceive(Car.java:188)
+	at es.csic.iiia.normlab.traffic.agent.Car.perceiveAndReason(Car.java:148)
+	at es.csic.iiia.normlab.traffic.map.CarMap.step(CarMap.java:154)
+	at es.csic.iiia.normlab.traffic.TrafficSimulator.step(TrafficSimulator.java:115)
+	... 10 more
